@@ -41,3 +41,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 20px;
   padding: 20px;
 }
+
+
+
+#root input,
+#root textarea {
+  color: black
+}
+
+.dark #root input,
+.dark #root textarea {
+  color: white
+}

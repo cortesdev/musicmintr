@@ -87,14 +87,15 @@ const CreateCampaign = () => {
             alt="money"
             className="w-[40px] h-[40px] object-contain"
           />
-          <h4 className="font-epilogue font-bold text-[25px] text-white ml-[20px]">
+          <h4 className="font-epilogue font-bold text-[25px] dark:text-white ml-[20px]">
             You will get 100% of the raised amount
           </h4>
         </div>
 
-        <div className="flex flex-wrap gap-[40px]">
+        <div className="flex flex-wrap gap-[40px] dark:text-white">
           <FormField
             labelName="Goal *"
+            className="dark:text-white"
             placeholder="ETH 0.50"
             inputType="text"
             value={form.target}
