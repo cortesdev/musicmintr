@@ -1,5 +1,4 @@
-# musicmintr Music crowdfunding Blockchain App
-
+# MusicMintr - Music crowdfunding Blockchain App on Testnet
 
 
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
@@ -20,7 +19,9 @@
 
 #Demo
 - [Netlify](https://645563abb6235107f0288ef5--fabulous-gumdrop-aea744.netlify.app) See it in action.
+To test connect your metamask to Goerli and create your campaign using your faucet tokens:
 
+- [ETH goerli Faucet](https://goerlifaucet.com) See it in action.
 
 # Vite React Starter
  
