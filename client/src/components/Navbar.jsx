@@ -52,7 +52,7 @@ const Navbar = () => {
             <img
               src={!address ? thirdweb : ethereum}
               alt="user"
-              className="w-[20%] h-[60%] object-contain "
+              className="w-[50%] h-[60%] object-contain "
             />
             <i className="ml-[10px]">
               {address
