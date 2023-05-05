@@ -1,4 +1,5 @@
 import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import {useDisconnect} from '@thirdweb-dev/react';
 
 export const navlinks = [
   {
@@ -32,6 +33,7 @@ export const navlinks = [
     name: 'logout',
     imgUrl: logout,
     link: '/',
+    onclick: () => useDisconnect,
     disabled: true,
   },
 ];

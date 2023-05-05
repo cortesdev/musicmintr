@@ -14,7 +14,7 @@ import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
 import ethereum from './ethereum-eth.svg';
-import favicon from './favicon.ico';
+import favicon from './favicon.png';
 
 export {
   tagType,

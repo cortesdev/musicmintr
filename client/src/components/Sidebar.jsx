@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import { logo, sun } from "../assets";
+import { logo, sun, moon, logout } from "../assets";
 import { navlinks } from "../constants";
 import { Switcher } from "./Switcher";
 import { Icon } from "./Icon";
+import { useDisconnect } from "@thirdweb-dev/react";
 
-const Sidebar = ({ theme, handleThemeSwitch }) => {
+const Sidebar = ({ connected, theme, handleThemeSwitch }) => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState("dashboard");
 
