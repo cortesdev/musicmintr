@@ -21,7 +21,12 @@ export const StateContextProvider = ({ children }) => {
   );
 
   const address = useAddress();
+
   const connect = useMetamask();
+
+  const handleDisconnect = () => {
+    disconnect();
+  };
 
   const publishCampaign = async (form) => {
     try {
@@ -99,6 +104,7 @@ export const StateContextProvider = ({ children }) => {
         address,
         contract,
         connect,
+        handleDisconnect,
         createCampaign: publishCampaign,
         getCampaigns,
         getUserCampaigns,

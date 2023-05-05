@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { useStateContext } from "../context";
 import { CustomButton } from "./";
-import { logo, menu, search, thirdweb } from "../assets";
+import { logo, menu, search, ethereum, thirdweb } from "../assets";
 import { navlinks } from "../constants";
 
 const Navbar = () => {
@@ -11,6 +11,12 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState("dashboard");
   const [toggleDrawer, setToggleDrawer] = useState(false);
   const { connect, address } = useStateContext();
+
+  // const shortenAddress = (address) => {
+  //   return `${address.substring(0, 6)}...${address.substring(
+  //     address.length - 4
+  //   )}`;
+  // };
 
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">
@@ -42,12 +48,19 @@ const Navbar = () => {
         />
 
         <Link to="/profile">
-          <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
+          <div className="px-[10px] text-white text-xs h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <img
-              src={thirdweb}
+              src={!address ? thirdweb : ethereum}
               alt="user"
-              className="w-[60%] h-[60%] object-contain"
+              className="w-[20%] h-[60%] object-contain "
             />
+            <i className="ml-[10px]">
+              {address
+                ? `${address.substring(0, 6)}...${address.substring(
+                    address.length - 4
+                  )}`
+                : ""}
+            </i>
           </div>
         </Link>
       </div>

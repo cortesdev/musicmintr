@@ -13,6 +13,8 @@ import moon from './moon.svg';
 import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
+import ethereum from './ethereum-eth.svg';
+import favicon from './favicon.ico';
 
 export {
   tagType,
@@ -30,4 +32,6 @@ export {
   money,
   loader,
   thirdweb,
+  ethereum, 
+  favicon
 };
