@@ -9,7 +9,7 @@ export const Hero = () => {
       </div>
 
       <div className=" text-white mt-[20px] gap-[26px]">
-        <h1 className="  text-[60px]">MusikMint</h1>
+        <h1 className="  text-[60px]">MusikMintr</h1>
         <p>
           The first music crowdfunding that mint funds for supporting musicians.
         </p>

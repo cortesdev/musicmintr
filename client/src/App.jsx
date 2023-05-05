@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { Sidebar, Navbar } from "./components";
 import { CampaignDetails, CreateCampaign, Home, Profile } from "./pages";
 import { Switcher } from "./components/Switcher";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState(null);
@@ -34,7 +35,10 @@ const App = () => {
         <Sidebar theme={theme} handleThemeSwitch={handleThemeSwitch} />
       </div>
 
-      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+      <div
+        className="flex
+flex-col flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5"
+      >
         <Navbar theme={theme} />
 
         <Routes>
@@ -43,6 +47,8 @@ const App = () => {
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
         </Routes>
+
+        <Footer />
       </div>
     </div>
   );
