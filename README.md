@@ -1,3 +1,3 @@
 # musicmintr Music crowdfunding Blockchain App
 
-![Crowdfunding](https://i.ibb.co/3h0SGyC/musicmintr.png)
+![Crowdfunding](https://i.ibb.co/Yj3ky9Y/planet.png)
