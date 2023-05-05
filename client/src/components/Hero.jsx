@@ -3,7 +3,7 @@ import { logo } from "../assets";
 
 export const Hero = () => {
   return (
-    <div className="relative hero flex flex-wrap mt-[50px]">
+    <div className="relative hero flex flex-wrap mt-[15px]">
       <div className="hero-card max-w-[190px] pr-[20px]">
         <img src={logo} className="" alt="logo" />
       </div>
