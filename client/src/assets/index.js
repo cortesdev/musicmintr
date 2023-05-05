@@ -9,6 +9,7 @@ import withdraw from './withdraw.svg';
 import tagType from './type.svg';
 import search from './search.svg';
 import menu from './menu.svg';
+import moon from './moon.svg';
 import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
@@ -22,6 +23,7 @@ export {
   payment,
   profile,
   sun,
+  moon,
   withdraw,
   search,
   menu,
