@@ -20,7 +20,7 @@ const Sidebar = ({ connected, theme, handleThemeSwitch }) => {
         />
       </Link>
 
-      <div className="flex-1 flex flex-col justify-between items-center bg-[#ccc] dark:bg-[#1c1c24] rounded-[20px] w-[76px] py-4 mt-12">
+      <div className="backdrop-blur-md flex-1 flex flex-col justify-between items-center bg-[#ccc] dark:bg-[#1c1c24] rounded-[20px] w-[76px] py-4 mt-12">
         <div className="flex flex-col justify-center items-center gap-3">
           {navlinks.map((link) => (
             <Icon

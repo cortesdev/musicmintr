@@ -10,10 +10,10 @@ const Footer = () => {
         <h2 className="font-bold ml-3 text-lg">MusikMintr</h2>
       </div>
       <small className=" ">
-        Developed by Ricardo Cortes-
-        <a rel="stylesheet" href="http://cortesdev.de">
+        Developed by Ricardo Cortes
+        {/* <a rel="stylesheet" href="http://cortesdev.de">
           cortesdev.de
-        </a>
+        </a> */}
       </small>
     </div>
   );
